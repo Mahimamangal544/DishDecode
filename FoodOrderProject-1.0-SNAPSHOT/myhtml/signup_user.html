@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mycss/signupuser.css">
+    <title>Login | DishDecode</title>
+
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="back">
+            <a href="home_page.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+
+        <div class="container">
+
+            <div class="heading-area">
+                <h1>Welcome Back</h1>
+                <p>Signup to your account</p>
+            </div>
+
+            <!-- USER + OWNER ICONS -->
+            <div class="role-icons">
+                <a href="signup_user.html" class="role-box active-role">
+                    <div class="role-grid">
+                        <i class="fa-solid fa-user"></i>
+                        <span>User</span>
+                    </div>
+                </a>
+
+                <a href="signup_owner.html" class="role-box">
+                    <div class="role-grid">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Restaurant Owner</span>
+                    </div>
+                </a>
+            </div>
+
+            <form action="/FoodOrderProject/signupdetail">
+
+                <!-- NAME FIELD ADDED -->
+                <div class="input-box">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </div>
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" name="pass" placeholder="Enter your password">
+                </div>
+
+                <!-- PHONE FIELD ADDED -->
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" placeholder="Enter your number">
+                </div>
+
+                <!-- ADDRESS FIELD ADDED -->
+                <div class="input-box">
+                    <label>Address</label>
+                    <input type="text" name="address" placeholder="Enter your address">
+                </div>
+
+                <button class="login-btn">Sign up</button>
+
+            </form>
+
+            <div class="other">
+                already have an account?
+                <a href="login_user.html" class="signup-link">login here</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* MAIN WRAPPER */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* BACK BUTTON */
+.back {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.back a {
+    font-size: 16px;
+    color: #16a249;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back a i {
+    margin-right: 8px;
+}
+
+/* LOGIN BOX */
+.container {
+    width: 480px;        /* Increased width */
+    background: #fff;
+    padding: 40px 35px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* HEADING */
+.heading-area h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #16a249;
+}
+
+.heading-area p {
+    font-size: 17px;
+    color: #747474;
+    margin-top: 5px;
+}
+
+/* ROLE ICONS BOX 
+.role-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 38px;
+}*/
+.role-icons{
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border: 2px solid #0000002e;
+    width: 410px;
+    height: 55px;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 10px;
+}
+
+
+/* ROLE BOX */
+.role-box {
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #616161;
+    font-weight: 600;
+    transition: .3s;
+}
+
+/* GRID INSIDE THE ROLE BOX 
+.role-grid {
+    display: grid;
+    grid-template-columns: 35px auto;
+    align-items: center;
+    column-gap: 12px;
+}*/
+
+/* ICON */
+.role-grid i {
+   color: #000000;
+}
+
+/* TEXT 
+.role-grid span {
+    font-size: 16.5px;
+    white-space: nowrap;      /* Restaurant Owner will stay in one line 
+}*/
+
+/* HOVER EFFECT */
+.role-box:hover {
+    background: #e1ffe7;
+    color: #16a249;
+}
+
+.role-box:hover .role-grid i {
+    color: #16a249;
+}
+
+/* ACTIVE SELECTED */
+.active-role {
+    color: white;
+    background-color:  #16a249;
+}
+
+/* INPUT FIELDS */
+.input-box {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-box label {
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+.input-box input {
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    border: 2px solid #dcdcdc;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 100%;
+    height: 46px;
+    background: #16a249;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: .3s;
+}
+
+.login-btn:hover {
+    transform: scale(1.03);
+}
+
+/* SIGNUP SECTION */
+.other {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #444;
+}
+
+.signup-link {
+    color: #16a249;
+    font-weight: 600;
+    margin-left: 3px;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}

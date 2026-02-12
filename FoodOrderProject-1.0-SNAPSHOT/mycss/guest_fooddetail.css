@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navsection {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navsec1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #16a249;
+}
+
+.navsec2 {
+    display: flex;
+    gap: 35px;
+}
+
+.navsec2 a {
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navsec2 a:hover {
+    color: #16a249;
+}
+
+/* BUTTONS RIGHT */
+.navsec3 {
+    display: flex;
+    gap: 15px;
+}
+
+.navsec3 a {
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.login {
+    border: 2px solid #c7c7c7;
+}
+
+.signup {
+    background: #16a249;
+    color: white;
+    border: 2px solid #16a249;
+}
+
+.continue {
+    background: #eaeaea;
+}
+
+.navsec3 a:hover {
+    transform: scale(1.05);
+}
+
+
+/* ================= PAGE CONTAINER ================= */
+.page-container{
+    max-width:1100px;
+    margin:30px auto;
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 16px 36px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+/* ================= RESTAURANT DETAILS ================= */
+.resto-card{
+    padding:32px;
+
+}
+
+.resto-name{
+    font-size:36px;
+    margin:0;
+    color:#1b5e20;
+}
+
+.resto-cuisine{
+    margin:6px 0;
+    font-size:15px;
+    color:#555;
+}
+
+.resto-address{
+    font-size:14px;
+    color:#777;
+}
+
+.resto-meta{
+    margin-top:12px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+    font-size:14px;
+}
+
+.open{
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:6px 14px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.time{
+    color:#555;
+}
+.phone{
+    color:#1b5e20;
+    font-weight:500;
+}
+
+.divider{
+    color:#bbb;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #e0e0e0;
+}
+
+/* ================= FOOD SECTION ================= */
+.food-section{
+    display:flex;
+    gap:30px;
+    padding:34px;
+}
+
+.food-img{
+    width:320px;
+    height:240px;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 14px 30px rgba(0,0,0,0.18);
+}
+
+.food-name{
+    font-size:30px;
+    color:#2e7d32;
+    margin:0;
+}
+
+.food-desc{
+    margin:12px 0;
+    color:#555;
+    line-height:1.7;
+}
+
+.price-cart{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-top:10px;
+}
+
+.food-price{
+    font-size:26px;
+    font-weight:600;
+    color:#1b5e20;
+}
+
+.cart-btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#43a047,#1b5e20);
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    box-shadow:0 10px 22px rgba(0,0,0,0.25);
+}
+
+/* ================= NUTRITION ================= */
+.side-nutrition{
+    margin-top:26px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    margin-bottom: 10px;
+}
+
+.nut-box{
+    padding:18px;
+    border-radius:18px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,0.18);
+    margin-bottom: 10px;
+}
+
+.calories{
+    background:#ff7043;
+}
+.carbs{
+    background:#42a5f5;
+}
+.protein{
+    background:#ab47bc;
+}
+.fat{
+    background:#fbc02d;
+    color:#333;
+}
+
+/* ================= TABLE ================= */
+.table-section{
+    padding:34px;
+}
+
+.table-section h2{
+    color:#1b5e20;
+    margin-bottom:14px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+th,td{
+    padding:14px;
+    text-align:center;
+}
+
+th{
+    background:#1fa463;
+    color:#fff;
+}
+
+tr:nth-child(even){
+    background:#f1f8f5;
+}
+
+.price-cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Quantity box */
+.qty-box {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* + and - buttons */
+.qty-box button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #f5f5f5;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.2s ease;
+}
+
+.qty-box button:hover {
+    background: #e0e0e0;
+}
+
+/* Quantity number */
+.qty-box span {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.food-img-box {
+    width: 500px;
+    height: 330px;
+    flex-shrink: 0;
+    position: relative;/* fallback bg */
+}
+
+.food-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resto-card{
+    padding:32px;
+
+}
+
+.resto-name{
+    font-size:36px;
+    margin:0;
+    color:#1b5e20;
+}
+
+.resto-cuisine{
+    margin:6px 0;
+    font-size:15px;
+    color:#555;
+}
+
+.resto-address{
+    font-size:14px;
+    color:#777;
+}
+
+.resto-meta{
+    margin-top:12px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    align-items:center;
+    font-size:14px;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #e0e0e0;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    margin-top: 60px;
+    padding: 50px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.social i {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}

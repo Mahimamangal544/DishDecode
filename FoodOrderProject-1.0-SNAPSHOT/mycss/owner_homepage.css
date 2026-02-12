@@ -1,0 +1,342 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navsection {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navsec1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #16a249;
+}
+
+.navsec2 {
+    display: flex;
+    gap: 35px;
+}
+
+.navsec2 a {
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navsec2 a:hover {
+    color: #16a249;
+}
+
+/* BUTTONS RIGHT */
+.navsec3 {
+    display: flex;
+    gap: 15px;
+}
+
+.navsec3 a {
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.login {
+    border: 2px solid #c7c7c7;
+}
+
+.signup {
+    background: #16a249;
+    color: white;
+    border: 2px solid #16a249;
+}
+
+.continue {
+    background: #eaeaea;
+}
+
+.navsec3 a:hover {
+    transform: scale(1.05);
+}
+
+/* HERO SECTION */
+.img {
+    height: 650px;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1528712306091-ed0763094c98') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.content h2 {
+    font-size: 55px;
+    margin-top: -10px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: 90%;
+}
+
+/* 🌿 GREEN HEALTH SECTION */
+.health-section {
+    background: #11a84b;
+    text-align: center;
+    padding: 70px 10px;
+    color: white;
+}
+
+.health-section h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.health-section p {
+    font-size: 18px;
+    margin-top: 12px;
+    opacity: 0.95;
+}
+
+.find-btn {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    font-size: 17px;
+    font-weight: 600;
+    color: #11a84b;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.find-btn:hover {
+    transform: scale(1.05);
+}
+
+/* CATEGORY SECTION */
+.category {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.category h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.category p {
+    font-size: 17px;
+    opacity: 60%;
+    margin-top: 5px;
+}
+
+/* DISHES GRID */
+.dishes {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pic:hover {
+    transform: translateY(-8px);
+}
+
+.picture {
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.picabout {
+    margin-top: 10px;
+}
+
+.dishname {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dishqty {
+    font-size: 14px;
+    opacity: 60%;
+    margin-top: 4px;
+}
+
+/* WHY CHOOSE DISHDECODE */
+.why {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #f9fbfa;
+}
+
+.why h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.why p {
+    font-size: 17px;
+    opacity: 60%;
+    margin-top: 8px;
+}
+
+.why-cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 25px;
+}
+
+.why-card {
+    padding: 30px 20px;
+    border-radius: 14px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.green {
+    color: #16a249;
+}
+
+.yellow {
+    color: #f2b100;
+}
+
+.why-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.why-card p {
+    font-size: 15px;
+    opacity: 70%;
+}
+
+/* FOOTER STYLES */
+.footer {
+    background: #ffffff;
+    padding: 50px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.brand {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.leaf {
+    color: #16a249;
+    font-size: 28px;
+}
+
+.footer-section p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.social i {
+    font-size: 22px;
+    margin-right: 12px;
+    cursor: pointer;
+    color: #333;
+}
+
+.social i:hover {
+    color: #16a249;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,203 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 25px auto;
+  background: white;
+  padding: 30px 35px;
+  border-radius: 14px;
+  border: 3px solid #16a249;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+/* Back to Home Outside Container */
+.back-home-wrapper {
+  width: 92%;
+  max-width: 1100px;
+  margin: 25px auto 0;
+  text-align: left;
+}
+
+.back-home-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #16a249;
+  text-decoration: none;
+  padding: 8px 14px;
+ transition: 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background: #16a249;
+  color: white;
+}
+
+
+
+.heading {
+  text-align: center;
+  color: #16a249;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* FORM DESIGN */
+.basic-form, .upload-box {
+  width: 50%;
+  background: #f9fbfa;
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.basic-form input,
+.basic-form textarea,
+.basic-form select,
+.field input,
+.field select {
+  width: 94%;
+  padding: 10px 12px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+.row {
+  display: flex;
+  gap: 35px;
+}
+
+/* Upload Box */
+.upload-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.upload-area {
+  border: 2px dashed #16a249;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/* Ingredients Section */
+.ingredients-section {
+  margin-top: 35px;
+  background: #f9fbfa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.sub-heading {
+  margin-bottom: 18px;
+  font-size: 22px;
+  color: #16a249;
+}
+
+.ingredient-row {
+    display: grid;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    grid-template-columns: 110px auto auto auto auto auto;
+}
+
+.group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.group input,
+.group select {
+  padding: 10px;
+  width: 160px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+}
+
+/* Buttons */
+.add-btn,
+.remove-btn {
+  padding: 10px 14px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.add-btn {
+  background: #16a249;
+}
+
+.remove-btn {
+  background: #e45757;
+}
+
+.submit-btn {
+  display: block;
+  margin: 35px auto 0;
+  background: #16a249;
+  padding: 14px 45px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+
+  .basic-form,
+  .upload-box {
+    width: 100%;
+  }
+
+  .ingredient-row {
+    flex-wrap: wrap;
+  }
+
+  .group input,
+  .group select {
+    width: 100%;
+  }
+}
+

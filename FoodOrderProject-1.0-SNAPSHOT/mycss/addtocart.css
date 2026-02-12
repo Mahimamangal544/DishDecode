@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navsection {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navsec1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #16a249;
+}
+
+.navsec2 {
+    display: flex;
+    gap: 35px;
+}
+
+.navsec2 a {
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navsec2 a:hover {
+    color: #16a249;
+}
+
+/* BUTTONS RIGHT */
+.navsec3 {
+    display: flex;
+    gap: 15px;
+}
+
+.navsec3 a {
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.login {
+    border: 2px solid #c7c7c7;
+}
+
+.signup {
+    background: #16a249;
+    color: white;
+    border: 2px solid #16a249;
+}
+
+.continue {
+    background: #eaeaea;
+}
+
+.navsec3 a:hover {
+    transform: scale(1.05);
+}
+
+.cart-page {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* LEFT */
+.cart-items {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.cart-items h2 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 200px 200px auto auto;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-info h4 {
+    font-size: 16px;
+}
+
+.item-info p {
+    color: green;
+    font-weight: 500;
+}
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-box button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    background: #16a249;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.item-total {
+    font-weight: 600;
+}
+
+/* RIGHT */
+.bill-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.bill-box h3 {
+    margin-bottom: 15px;
+}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.bill-row.total {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.checkout-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #16a249;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.checkout-btn:hover {
+    background: #12823a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .cart-page {
+        grid-template-columns: 1fr;
+    }
+}
+/* FOOTER STYLES */
+.footer {
+    background: #ffffff;
+    padding: 50px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.brand {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.leaf {
+    color: #16a249;
+    font-size: 28px;
+}
+
+.footer-section p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.social i {
+    font-size: 22px;
+    margin-right: 12px;
+    cursor: pointer;
+    color: #333;
+}
+
+.social i:hover {
+    color: #16a249;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+ /* ===== NUTRITION CARDS ===== */
+        .nutrition-cards {
+            display: flex;
+            gap: 14px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nutri-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 18px;
+            border-radius: 18px;
+            color: #fff;
+            min-width: 130px;
+            transition: transform 0.25s ease;
+        }
+
+        .nutri-box:hover {
+            transform: translateY(-4px);
+        }
+
+        .nutri-box span {
+            font-size: 14px;
+        }
+
+        .nutri-box strong {
+            font-size: 18px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .calories { background: linear-gradient(135deg, #ff7a45, #ff5722); }
+        .carbs    { background: linear-gradient(135deg, #42a5f5, #1e88e5); }
+        .protein  { background: linear-gradient(135deg, #ab47bc, #8e24aa); }
+        .fats     { background: linear-gradient(135deg, #ffca28, #f9a825); }
+        
+        .add-more-box{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-more-btn{
+    background: #ff6f00;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.add-more-btn:hover{
+    background: #e65c00;
+}
+
+.add-more-box{
+                margin-top: 25px;
+                text-align: center;
+            }
+
+            .add-more-btn{
+                background: #16a249;
+                color: white;
+                border: none;
+                padding: 12px 22px;
+                border-radius: 8px;
+                font-size: 15px;
+                cursor: pointer;
+                font-weight: 500;
+                transition: 0.3s;
+            }
+
+            .add-more-btn:hover{
+                background: #e65c00;
+                transform: scale(1.03);
+            }
+
+            .remove-btn {
+                width: 100%;
+                padding: 12px;
+                background: #ff4d4d;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                cursor: pointer;
+                height: 40px;
+            }
+
+            .remove-btn:hover {
+                background: #e60000;
+            }
+            .remove-btn{
+                background:#ff4d4d;
+                color:#fff;
+                border:none;
+                padding:6px 12px;
+                border-radius:6px;
+                cursor:pointer;
+            }
+            .remove-btn:hover{
+                background:#e60000;
+            }
+            
+            
+             .remove{
+                width: 170px;
+                height: 40px;
+                padding: 12px;
+                background: #ff4d4d;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            .remove:hover {
+                background: #e60000;
+            }
+            .remove{
+                background:#ff4d4d;
+                color:#fff;
+                border:none;
+                padding:6px 12px;
+                border-radius:6px;
+                cursor:pointer;
+            }
+            .remove:hover{
+                background:#e60000;
+            }
+            
+

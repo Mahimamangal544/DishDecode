@@ -1,0 +1,127 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+
+        /* Back Button */
+        .back-btn {
+            text-decoration: none;
+            color: #1e8e3e;
+            font-weight: 500;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Card */
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        label {
+            font-size: 13px;
+            color: #777;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input, textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #ddd;
+            padding: 8px 2px;
+            font-size: 15px;
+            background: transparent;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-bottom: 2px solid #1e8e3e;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 70px;
+        }
+
+        .row {
+            display: flex;
+            gap: 25px;
+        }
+
+        .row .form-group {
+            flex: 1;
+        }
+
+        /* Buttons */
+        .btn-group {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .save-btn {
+            background: #1e8e3e;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .save-btn:hover {
+            background: #166b2e;
+        }
+
+        .cancel-btn {
+            background: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        .cancel-btn:hover {
+            background: #c0392b;
+        }
+
+        @media (max-width: 600px) {
+            .row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
